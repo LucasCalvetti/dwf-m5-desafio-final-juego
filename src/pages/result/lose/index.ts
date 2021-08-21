@@ -7,7 +7,7 @@ export function initResultLose(params) {
     div.classList.add("result-lose__main-container");
     div.innerHTML = `
     <div class="result-lose__result-img-container">
-        <result-img result="lose">Ganaste</result-img>
+        <result-img result="lose">Perdiste</result-img>
     </div>
     <div class="result-lose__score-container">
         <custom-text tag="h2">Score</custom-text>
