@@ -39,13 +39,15 @@ export function initRouter(container: Element) {
                     container.firstChild.remove();
                 }
                 container.appendChild(el);
-            } else if (route == "/") {
-                goTo("/welcome");
             }
         }
     }
-    handleRoute(location.pathname);
-    window.onpopstate = function () {
-        handleRoute(location.pathname);
+    if (location.pathname == "/dwf-m5-desafio-final-juego/") {
+        goTo("/home");
+    } else {
+        handleRoute(location.pathname.replace("/dwf-m5-desafio-final-juego", ""));
+    }
+    window.onpopstate = () => {
+        handleRoute(location.pathname.replace("/dwf-m5-desafio-final-juego", ""));
     };
 }
