@@ -43,7 +43,7 @@ export function initRouter(container: Element) {
         }
     }
     if (location.pathname == "/dwf-m5-desafio-final-juego/") {
-        goTo("/home");
+        goTo("/welcome");
     } else {
         handleRoute(location.pathname.replace("/dwf-m5-desafio-final-juego", ""));
     }
