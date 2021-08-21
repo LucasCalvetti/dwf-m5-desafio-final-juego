@@ -47,7 +47,6 @@ export function initGame(params) {
             myPlay: currentState.currentGame.myPlay,
             computerPlay: currentState.currentGame.computerPlay,
         };
-        console.log(state.data.history);
         div.innerHTML = `
         <div class="game__show-both-plays-container game__fade-in-down">
             <my-play type="${computerPlay}" opponent="true"></my-play>
