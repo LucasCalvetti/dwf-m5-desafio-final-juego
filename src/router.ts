@@ -42,12 +42,15 @@ export function initRouter(container: Element) {
             }
         }
     }
-    if (location.pathname == "/dwf-m5-desafio-final-juego/") {
-        goTo("/welcome");
+    goTo("/welcome");
+
+    if (location.host.includes("github.io") || "/") {
+        goTo("/dwf-m5-desafio-final-juego/welcome");
     } else {
-        handleRoute(location.pathname.replace("/dwf-m5-desafio-final-juego", ""));
+        handleRoute(location.pathname);
     }
-    window.onpopstate = () => {
-        handleRoute(location.pathname.replace("/dwf-m5-desafio-final-juego", ""));
+
+    window.onpopstate = function () {
+        handleRoute(location.pathname);
     };
 }
