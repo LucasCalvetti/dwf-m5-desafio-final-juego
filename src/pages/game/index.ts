@@ -110,7 +110,6 @@ export function initGame(params) {
                 for (let i of playerPlaysArray) {
                     if (i.classList.contains("selected")) {
                         i.classList.remove("selected");
-                        i.classList.add("not-selected");
                     }
                 }
                 thisPlayEl.classList.add("selected");
