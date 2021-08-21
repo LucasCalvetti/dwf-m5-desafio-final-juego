@@ -9,7 +9,7 @@ body {
     width: 317px;
     margin: 0 auto;
     height: 100vh;
-    padding-top: 17vh;
+    padding-top: 5vh;
 }
 .welcome__title-container {
     color: #009048;
@@ -36,11 +36,11 @@ body {
     width: 317px;
     margin: 0 auto;
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .instructions__text-container {
-    margin-bottom: 15%;
+    margin-bottom: 15px;
 }
 
 .game__game-container {
